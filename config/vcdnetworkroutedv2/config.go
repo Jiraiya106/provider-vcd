@@ -1,4 +1,4 @@
-package vcd_network_routed_v2
+package vcdnetworkroutedv2
 
 import "github.com/upbound/upjet/pkg/config"
 
@@ -7,6 +7,6 @@ func Configure(p *config.Provider) {
     p.AddResourceConfigurator("vcd_network_routed_v2", func(r *config.Resource) {
         // We need to override the default group that upjet generated for
         // this resource, which would be "github"
-        r.ShortGroup = "vcd_network_routed_v2"
+        r.ShortGroup = "vcdnetworkroutedv2"
     })
 }

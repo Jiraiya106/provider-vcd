@@ -10,7 +10,7 @@ import (
 
 	ujconfig "github.com/upbound/upjet/pkg/config"
 
-	"github.com/Jiraiya106/provider-vcd/config/vcd_network_routed_v2"
+	"github.com/Jiraiya106/provider-vcd/config/vcdnetworkroutedv2"
 )
 
 const (
@@ -36,7 +36,7 @@ func GetProvider() *ujconfig.Provider {
 
 	for _, configure := range []func(provider *ujconfig.Provider){
 		// add custom config functions
-		vcd-network-routed-v2.Configure,
+		vcdnetworkroutedv2.Configure,
 	} {
 		configure(pc)
 	}
